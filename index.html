@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mp3 Player</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <div class="song-img-div">
+          <div class="song-img"><img class="prop-cover" id="prop-cover" src="assets/covers/cover1.jpg" alt=""></div>
+          <img class="vinyl" src="assets/covers/Vinyl.png" />
+        </div>
+        <div class="track-title-div"></div>
+        <div class="artist-name-div"></div>
+        
+        
+        <div class="timeline-slider">
+          <div class="timeline">
+            <small class="time">0:00</small>
+            <small class="fulltime">3:03</small>
+          </div>
+          <div class="range-slider">
+            <input type="range" min="0" max="100" value="0" class="slider" />
+            <div class="slider-thumb"></div>
+            <div class="progress"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn" id="btnPrev">
+            <span class="material-symbols-outlined"> fast_rewind </span>
+          </button>
+          <button class="btn btn-main" id="mainPlayBtn">
+            <span class="material-symbols-outlined"> play_arrow </span>
+          </button>
+          <button class="btn" id="btnNext">
+            <span class="material-symbols-outlined"> fast_forward </span>
+          </button>
+        </div>
+
+      </div>
+      <div class="api-panel">
+        <h1 class="api-title">Explore</h1>
+        <div class="api-tabs">
+          <p class="lyrics-tab">Lyrics</p>
+          <p class="albums-tab">Other Albums</p>
+          <p class="artist-tab">Related Artists</p>
+        </div>
+        <div id="display-container" class="display-container">
+          <div class="song-lyrics" id="song-lyrics">
+            
+          </div>
+          <div class="other-albums" id="other-albums"></div>
+          <div class="related-artists" id="related-artists"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/scripts/main.js"></script>
+
+  </body>
+</html>
